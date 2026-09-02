@@ -170,7 +170,7 @@ function collect(){
 function buildReview(){let d=collect(), box=document.getElementById('review');box.innerHTML='';Object.entries(d).filter(([k,v])=>v&&k!=='תאריך מילוי').forEach(([k,v])=>{let x=document.createElement('div');x.innerHTML=`<b>${k}</b><span>${String(v).replaceAll('<','&lt;')}</span>`;box.appendChild(x)})}
 // V3: כתובת Google Apps Script Web App.
 // אחרי פריסת הסקריפט, הדביקו כאן את כתובת ה-Web App שמסתיימת ב-/exec.
-const SUBMISSION_ENDPOINT='https://script.google.com/a/macros/sumit.co.il/s/AKfycbwMgAxqqGBqvnaOobQkzhbXM7UmR4FW6VA1prp3ZRTEOsXEKAOC4auUVOT6kDtYbE7O/exec';
+const SUBMISSION_ENDPOINT='https://script.google.com/macros/s/AKfycbzY61ivJHbnLDnJ8-gYfRuEaE1axehYUe_laMnUq3HcTER6W-scucrJE_Shfy0fJco/exec';
 
 form.addEventListener('submit',async e=>{
  e.preventDefault();
